@@ -59,9 +59,9 @@ export const Sort = () => {
   return (
     <>
       <h1 className="text-center font-bold p-2">SORT</h1>
-      <form className="flex" onSubmit={(e) => e.preventDefault()}>
-        <label className="flex flex-row m-auto">
-          <div className="flex flex-col text-center">
+      <form className="md:flex" onSubmit={(e) => e.preventDefault()}>
+        <label className="md:flex md:flex-row m-auto">
+          <div className="md:flex md:flex-col text-center">
             <span>Where</span>
             <select
               className="border-black border-solid border-2 w-36 h-10 mb-4 rounded-lg"
@@ -74,7 +74,7 @@ export const Sort = () => {
               <option value="distance">Distance</option>
             </select>
           </div>
-          <div className="flex flex-col text-center">
+          <div className="md:flex md:flex-col text-center">
             <span>How</span>
             <select
               className="border-black border-solid border-2 w-36 h-10 mb-4 ml-4 rounded-lg"
@@ -88,7 +88,7 @@ export const Sort = () => {
               <option value="less">Less</option>
             </select>
           </div>
-          <div className="flex flex-col text-center">
+          <div className="md:flex md:flex-col text-center">
             <span>What</span>
             <input
               className="border-black border-solid border-2 h-10 mb-4 ml-4 p-1 rounded-lg"
