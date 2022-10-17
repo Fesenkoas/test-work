@@ -35,7 +35,7 @@ export const AddItem = () => {
       <h1 className="text-center font-bold p-2">ADD ITEM</h1>
 
       <form className="flex" onSubmit={(e) => e.preventDefault()}>
-        <label className="flex flex-row m-auto">
+        <label className=" md:flex-row m-auto">
           <input
             onChange={(e) => {
               setTitle(e.target.value);
