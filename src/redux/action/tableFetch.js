@@ -4,7 +4,7 @@ import axios from "axios"
 export const getItemsFetch = () => async(dispatch) => {
     dispatch(loading(false));
     try {
-        const {data} = await axios.get("mongodb+srv://Aleksander:12345@cluster0.q408pmi.mongodb.net/test-work?retryWrites=true&w=majority/api/item/get"); 
+        const {data} = await axios.get("https://alex-fes2.herokuapp.com//api/item/get"); 
         dispatch(getTable(data))
     } catch (e) {
         console.log(e);
@@ -14,7 +14,7 @@ export const getItemsFetch = () => async(dispatch) => {
   export const postItemsFetch = (body) => async(dispatch) => {
     dispatch(loading(false));
     try {
-        const {data} = await axios.post("http://localhost:3002/api/item/post", body); 
+        const {data} = await axios.post("https://alex-fes2.herokuapp.com//api/item/post", body); 
         console.log(data);
         dispatch(getItemsFetch())
     } catch (e) {
