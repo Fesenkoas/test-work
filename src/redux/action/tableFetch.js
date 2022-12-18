@@ -4,7 +4,7 @@ import axios from "axios"
 export const getItemsFetch = () => async(dispatch) => {
     dispatch(loading(false));
     try {
-        const {data} = await axios.get("https://alex-fes2.herokuapp.com/api/item/get"); 
+        const {data} = await axios.get("https://test-work1.herokuapp.com/api/item/get"); 
         dispatch(getTable(data))
     } catch (e) {
         console.log(e);
